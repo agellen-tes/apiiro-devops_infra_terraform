@@ -14,11 +14,12 @@ provider "azurerm" {
 }
 
 # Create a resource group
-resource "azurerm_resource_group" "example" {
-  name     = "example-resources"
+resource "azurerm_resource_group" "resourcegroup" {
+  name     = "agellen-euw-terraform"
   location = "West Europe"
   tags = {
     environment = "dev"
     source = "Terraform"
+    owner = "Aron Gellen"
   }
 }
