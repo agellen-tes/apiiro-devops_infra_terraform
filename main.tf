@@ -14,7 +14,8 @@ provider "azurerm" {
 }
 
 # Create a resource group
-resource "azurerm_resource_group" "resourcegroup" {
+resource "azurerm_resource_group" "resource_group_agellen" { 
+  # resource <resource type> <local name/ref in the configuration>
   name     = "agellen-euw-terraform"
   location = "West Europe"
   tags = {
