@@ -31,7 +31,7 @@ resource "azurerm_linux_virtual_machine_scale_set" "rs-1"{
   location            = azurerm_resource_group.rg-1.location
   computer_name_prefix = "aronvmss0"
   sku = "Standard_D2s_v3"
-  instances = 2
+  instances = 0
   admin_username = "azureuser"
   encryption_at_host_enabled = false
   overprovision = false
